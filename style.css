@@ -1,0 +1,40 @@
+.margin {
+    margin: 48px;
+}
+
+.top-margin {
+    margin-top: 144px;
+}
+
+.bread-crumbs {
+    background-color: black;
+    position: fixed;
+    padding: 16px;
+    border-radius: 16px;
+    color: white;
+}
+
+.left-margin {
+    margin-left: 48px;
+}
+
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.white-font {
+    color: white
+}
+
+.white-black {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    border-radius: 10px;
+}

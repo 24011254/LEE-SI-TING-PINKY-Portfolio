@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LEE SI TING PINKY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="Logo/logo.png" alt="Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Achievements.html">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <p class="bread-crumbs left-margin"><a href="Programming.html">Programming</a> → My Travel List App</p>
+    <div class="margin">
+        <br>
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col">
+                    <video class="card-img-top" autoplay loop muted>
+                        <source src="My Travel List.mp4" type="video/mp4">
+                    </video>
+                    <a href="https://c219-travel-list-22h36mk77-24011254s-projects.vercel.app/">Click here to view the
+                        website live.</a>
+                    <div style="margin-top: 48px;" class="mt-4 text-start">
+                        <p>
+                            <b>Problem Statement: Create a Travel Packing List Application</b>
+                        </p>
+                        <br>
+                        <p>
+                            <b>Objective</b>
+                        </p>
+                        <br>
+                        <p>
+                            You are tasked with developing a React-based web application called "My
+                            Travel List." This app helps users manage their travel packing lists by adding items,
+                            marking them as packed, and removing them when necessary.
+                        </p>
+                        <br>
+                        <p>
+                            <b>Requirements</b>
+                        </p>
+                        <br>
+                        <ol>
+                            <li>
+                                <b>Core Features:</b>
+                                <ul>
+                                    <li>
+                                        <b>
+                                            Add Items: Users can add items with a quantity and description via a
+                                            form.
+                                        </b>
+                                    </li>
+                                    <li>
+                                        <b>Display List:</b> Show all items in a packing list, including their status
+                                        (packed/unpacked).
+                                    </li>
+                                    <li>
+                                        <b>Mark Packed:</b> Allow users to mark items as packed by toggling a
+                                        checkbox.
+                                    </li>
+                                    <li>
+                                        <b>Delete Items:</b> Enable users to remove items from the list.
+                                    </li>
+                                </ul>
+                            </li>
+                            <br>
+
+                            <li>
+                                <b>Technical Expectations:</b>
+                                <ul>
+                                    <li>
+                                        Implement <b>state management</b> using the useState hook to track the list of
+                                        items.
+                                    </li>
+                                    <li>
+                                        Use <b>props</b> to pass data and functions between components.
+                                    </li>
+                                    <li>Employ <b>JSX</b> to design an intuitive and clean UI.</li>
+                                    <li>
+                                        Include a footer that dynamically calculates and displays the percentage
+                                        of packed items.
+                                    </li>
+                                </ul>
+                            </li>
+                            <br>
+
+                            <li>
+                                <b>Components and Functions:</b>
+                                <ul>
+                                    <li>
+                                        <b>App Component:</b>
+                                        <ul>
+                                            <li>
+                                                Manage the overall state of the application.
+                                            </li>
+                                            <li>
+                                                Define handlers for adding, updating, and deleting items.
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <b>Form Component:</b>
+                                        <ul>
+                                            <li>
+                                                Provide a form for users to input item details.
+                                            </li>
+                                            <li>
+                                                Use state to handle form inputs and reset them after submission.
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <b>PackingList Component:</b>
+                                        <ul>
+                                            <li>
+                                                Render a list of items using the Item component.
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <b>Item Component:</b>
+                                        <ul>
+                                            <li>
+                                                Display individual item details with a checkbox and delete button.
+                                            </li>
+                                            <li>
+                                                Handle updates and deletions via callback functions.
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <b>Stats Component:</b>
+                                        <ul>
+                                            <li>
+                                                Show statistics about the total items, packed items, and packing
+                                                completion percentage.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <br>
+
+                            <li>
+                                <b>Application Structure:</b>
+                                <ul>
+                                    <li>
+                                        Application Structure:
+                                        <ul>
+                                            <li>
+                                                Use components to modularize the application: Logo, Form, PackingList,
+                                                Item, and Stats.
+                                            </li>
+                                            <li>
+                                                Implement proper parent-child relationships to share state and props
+                                                effectively.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <br>
+
+                            <li>
+                                <b>
+                                    Customization and Extended Features
+                                </b>
+                                <ul>
+                                    <li>
+                                        Customize the app by applying unique styles and layout designs to give
+                                        the UI a distinctive look. Be creative and experiment with colours,
+                                        typography, and layout.
+                                    </li>
+                                    <li>
+                                        Extend the functionality of the website by adding new features or
+                                        interactive elements, such as sorting options, a simple "Search" filter, or
+                                        any additional feature that enhances the user experience.
+                                    </li>
+                                </ul>
+                            </li>
+                            <br>
+
+                            <li>
+                                <b>Hosting the App Online</b>
+                                <ul>
+                                    <li>
+                                        Host your React application on a platform like GitHub Pages, Vercel, or
+                                        Netlify so that it is accessible online. Share the live link to demonstrate
+                                        your completed project.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <br>
+                        <p>
+                            <b>
+                                Outcome
+                            </b>
+                            <br>
+                            <br>
+                            By completing this task, you will demonstrate the understanding of:
+                        <ul>
+                            <li>
+                                Building and organizing components in React.
+                            </li>
+                            <li>
+                                Using JSX for UI elements.
+                            </li>
+                            <li>
+                                Passing data and functions via props.
+                            </li>
+                            <li>
+                                Managing state effectively with React hooks.
+                            </li>
+                            <li>
+                                Creating functional and interactive forms.
+                            </li>
+                        </ul>
+                        </p>
+                        <br>
+                        <p>
+                            <b>References:</b>
+                            <br>
+                        <ul>
+                            <li>
+                                Canva
+                            </li>
+                            <li>
+                                OpenAI. (2025). ChatGPT (Version 5.1) [Large language model]. https://chat.openai.com/
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
